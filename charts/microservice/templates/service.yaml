@@ -4,12 +4,11 @@ kind: Service
 metadata:
   name: {{ .name }}
 spec:
-   type: {{ .serviceType | default "ClusterIP" }}
+  type: {{ .serviceType | default "ClusterIP" }}
   selector:
     app: {{ .name }}
   ports:
-    - protocol: TCP
-      port: {{ .port }}
-      targetPort: {{ .port }}
+  - protocol: TCP
+    port: {{ .port }}
+    targetPort: {{ .port }}
 {{- end }}
-
