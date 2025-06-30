@@ -60,6 +60,7 @@ microservice:
       image: gcr.io/google-samples/microservices-demo/frontend:v0.8.0
       port: 8080
       replicaCount: 2
+      serviceType: LoadBalancer
       env:
         - name: PRODUCT_CATALOG_SERVICE_ADDR
           value: productcatalogservice:3550
