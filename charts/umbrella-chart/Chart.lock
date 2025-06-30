@@ -1,0 +1,9 @@
+dependencies:
+- name: redis
+  repository: file://../redis
+  version: 0.1.0
+- name: microservice
+  repository: file://../microservice
+  version: 0.1.0
+digest: sha256:6870f1be05bf92f32c276fe39c84978afd50988042894186efc0b27d45c5cb75
+generated: "2025-06-29T18:24:54.161800295Z"

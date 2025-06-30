@@ -1,0 +1,12 @@
+apiVersion: v2
+name: umbrella-chart
+description: Umbrella Helm chart for deploying all microservices
+version: 0.1.0
+dependencies:
+  - name: redis
+    version: "0.1.0"
+    repository: "file://../redis"
+  - name: microservice
+    version: "0.1.0"
+    repository: "file://../microservice"
+

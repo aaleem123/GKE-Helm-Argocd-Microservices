@@ -1,0 +1,14 @@
+# Argo CD Installation Steps
+
+# Create namespace
+kubectl create namespace argocd
+
+# Apply official Argo CD install manifest
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+# Optional: Port-forward to access Argo CD UI
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+# Get Argo CD initial admin password
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
