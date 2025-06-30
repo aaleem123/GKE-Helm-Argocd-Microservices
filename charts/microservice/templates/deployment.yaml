@@ -17,13 +17,13 @@ spec:
       - name: {{ .name }}
         image: {{ .image }}
         ports:
-        - containerPort: {{ .port }}
-        {{- if .env }}
+          - containerPort: {{ .port }}
+{{- if .env }}
         env:
-        {{- range .env }}
-        - name: {{ .name }}
-          value: {{ .value | quote }}
-        {{- end }}
-        {{- end }}
+{{- range .env }}
+          - name: {{ .name }}
+            value: {{ .value | quote }}
+{{- end }}
+{{- end }}
 {{- end }}
 
