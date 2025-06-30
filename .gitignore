@@ -20,6 +20,8 @@ charts/umbrella-chart/charts/
 
 # Ignore old output if present
 *.tgz
+charts/umbrella-chart/charts/*
+!charts/umbrella-chart/charts/*.tgz
 
 # Node modules if using JS in future
 node_modules/
