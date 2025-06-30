@@ -1,11 +1,1 @@
-services:
-  - name: emailservice
-    image: gcr.io/google-samples/microservices-demo/emailservice:v0.8.0
-    port: 8080
-    replicaCount: 2
-
-  - name: recommendationservice
-    image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.8.0
-    port: 8080
-    replicaCount: 2
-
+services: []
