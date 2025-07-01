@@ -2,7 +2,6 @@
 
 **🚀 GKE Microservices Demo with Helm & Argo CD**
 - Automating the deployment of Google’s Hipster Shop microservices demo to Google Kubernetes Engine (GKE) using:
-
 - Helm Umbrella Chart
 - Argo CD GitOps Continuous Deployment
 - Google Kubernetes Engine (GKE)
